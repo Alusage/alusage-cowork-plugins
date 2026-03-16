@@ -1,0 +1,28 @@
+{
+  "name": "njeudy-plugins",
+  "owner": {
+    "name": "Nicolas Jeudy"
+  },
+  "plugins": [
+    {
+      "name": "odoo-ticket-assistant",
+      "source": "./odoo-ticket-assistant",
+      "description": "Assistance intelligente aux tickets Odoo Helpdesk : triage automatique, qualification et réponse calibrée selon un niveau de confiance (0-100). Support multi-instance Alusage + Sudokeys."
+    },
+    {
+      "name": "sudokeys-dev",
+      "source": "./sudokeys-dev",
+      "description": "Workflow de développement Odoo Sudokeys : BMAD, branches TI, brainkeys, MR GitLab — déclenché depuis les tickets helpdesk."
+    },
+    {
+      "name": "alusage-dev",
+      "source": "./alusage-dev",
+      "description": "Workflow de développement Alusage : BMAD method, branches dev-YYYYMMDD, GitHub PRs, MCP server pour instances Docker/Cloudron."
+    },
+    {
+      "name": "customer-support",
+      "source": "./customer-support",
+      "description": "Triage tickets, draft responses, escalate issues, and build your knowledge base. Research customer context and turn resolved issues into self-service content."
+    }
+  ]
+}
