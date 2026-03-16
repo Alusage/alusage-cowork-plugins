@@ -1,0 +1,43 @@
+{
+  "workspace_root": "/home/njeudy/dev/Devops/odoo_jarvis_assistant",
+  "clients_dir": "/home/njeudy/dev/Devops/odoo_jarvis_assistant/clients",
+  "bmad_dir": "/home/njeudy/dev/Devops/odoo_jarvis_assistant/_bmad",
+  "docs_dir": "/home/njeudy/Nextcloud/Les Atelier du 97/docs/odoo_jarvis_assistant",
+  "github": {
+    "org": "Alusage",
+    "main_repo": "odoo_alusage",
+    "api_url": "https://api.github.com",
+    "cli": "gh"
+  },
+  "branch_pattern": "dev-{YYYYMMDD}-{HHMM}",
+  "branch_example": "dev-20260312-1430",
+  "production_branches": ["18.0", "19.0", "16.0"],
+  "worktrees_path": "{client_dir}/.worktrees/{branch}",
+  "mcp_server": {
+    "name": "alusage-jarvis",
+    "tool_prefix": "mcp__alusage-jarvis__",
+    "key_tools": [
+      "client", "worktree", "branch", "git", "docker_branch",
+      "deployment", "cloudron_tools", "module", "system_git_config"
+    ]
+  },
+  "architecture_rules": {
+    "guardian_file": "/home/njeudy/dev/Devops/odoo_jarvis_assistant/.claude/agents/architecture-guardian.md",
+    "claude_md": "/home/njeudy/dev/Devops/odoo_jarvis_assistant/CLAUDE.md",
+    "rules": [
+      "Règle #1: Le Dashboard est STUPIDE (pas de logique métier)",
+      "Règle #2: MCP = Source de vérité unique",
+      "Règle #3: Pas de duplication MCP ↔ Dashboard",
+      "Règle #4: Cloudron passe par MCP",
+      "Règle #5: Format StandardResponse obligatoire"
+    ]
+  },
+  "commit_types": {
+    "FIX": "Correction de bug",
+    "IMP": "Amélioration fonctionnelle",
+    "ADD": "Nouvelle fonctionnalité",
+    "REM": "Suppression",
+    "REF": "Refactoring",
+    "I18N": "Traduction"
+  }
+}

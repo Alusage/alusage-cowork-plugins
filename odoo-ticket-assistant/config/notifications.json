@@ -1,0 +1,17 @@
+{
+  "_comment": "Configuration des notifications post-action. Modifier les valeurs selon votre setup.",
+  "slack": {
+    "enabled": false,
+    "instance": "sudokeys",
+    "channel": "#support-tickets",
+    "notify_on": ["ticket_auto_sent", "ticket_escalated", "daily_digest"],
+    "mcp_server": "slack"
+  },
+  "discord": {
+    "enabled": false,
+    "instance": "alusage",
+    "webhook_url": "https://discord.com/api/webhooks/VOTRE_WEBHOOK_ID/VOTRE_WEBHOOK_TOKEN",
+    "notify_on": ["ticket_auto_sent", "ticket_escalated", "daily_digest"],
+    "mention_role": ""
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "name": "odoo-helpdesk",
-  "version": "0.1.0",
-  "description": "Triage Odoo Helpdesk tickets, draft responses, escalate issues, and manage customer support workflows using Odoo's API.",
-  "author": {
-    "name": "Nicolas Jeudy"
-  }
-}

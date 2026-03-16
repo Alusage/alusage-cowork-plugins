@@ -1,0 +1,14 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "echo '=== Odoo Ticket Assistant ===' && SCHEMA=${CLAUDE_PLUGIN_ROOT}/config/odoo-schema.json && if [ -f \"$SCHEMA\" ]; then LAST=$(python3 -c \"import json,sys; d=json.load(open('$SCHEMA')); print(d.get('_meta',{}).get('last_sync','inconnue'))\" 2>/dev/null || echo 'inconnue'); DAYS=$(python3 -c \"from datetime import datetime,timezone; s='$LAST'; d=(datetime.now(timezone.utc)-datetime.fromisoformat(s)).days if s!='inconnue' else 999\" 2>/dev/null || echo 999); if [ \"$DAYS\" -gt 30 ] 2>/dev/null; then echo \"⚠️  Cache Odoo ancien ($DAYS jours) — relancer /sync-odoo\"; else echo \"✅ Cache Odoo à jour (sync: $LAST)\"; fi; RESOL=$(ls ${CLAUDE_PLUGIN_ROOT}/knowledge/resolutions/ 2>/dev/null | wc -l); PROJ=$(ls ${CLAUDE_PLUGIN_ROOT}/knowledge/projets/ 2>/dev/null | wc -l); CLIENTS=$(ls ${CLAUDE_PLUGIN_ROOT}/knowledge/clients/ 2>/dev/null | wc -l); echo \"Base connaissance: $RESOL résolutions | $PROJ projets | $CLIENTS clients\"; else echo \"⚠️  Pas de cache Odoo — lancer /sync-odoo pour initialiser\"; fi && echo 'Commandes: /analyser-tickets /repondre-ticket /planifier-activite /documenter-projet /sync-odoo /traiter-auto'",
+          "timeout": 15
+        }
+      ]
+    }
+  ]
+}

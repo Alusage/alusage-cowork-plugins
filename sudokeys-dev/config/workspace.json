@@ -1,0 +1,27 @@
+{
+  "_comment": "Configuration du workspace Sudokeys. Modifier si les chemins changent.",
+  "workspace_root": "/home/njeudy/dev/Sudokeys/workspace",
+  "venv_activate": "/home/njeudy/venv_3.12/bin/activate",
+  "gitlab": {
+    "host": "gitlab.sudokeys.com",
+    "port": "10022",
+    "base_url": "https://gitlab.sudokeys.com",
+    "api_url": "https://gitlab.sudokeys.com/api/v4",
+    "namespace": "sudokeys",
+    "token_env": "GITLAB_TOKEN",
+    "_comment_token": "Exporter GITLAB_TOKEN dans votre shell ou .bashrc pour les opérations MR"
+  },
+  "branch_prefix": "TI",
+  "default_target_branch": "master",
+  "addons_path_pattern": "{client}/odoo/addons-store/{client}-addons",
+  "commit_types": {
+    "FIX": "Correction de bug",
+    "IMP": "Amélioration fonctionnelle",
+    "ADD": "Ajout de nouvelle fonctionnalité",
+    "REM": "Suppression de code ou fonctionnalité",
+    "REF": "Refactoring sans changement fonctionnel",
+    "MOV": "Déplacement de fichiers",
+    "I18N": "Traductions",
+    "DOC": "Documentation"
+  }
+}

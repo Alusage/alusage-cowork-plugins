@@ -1,0 +1,9 @@
+{
+  "name": "odoo-ticket-assistant",
+  "version": "0.1.0",
+  "description": "Assistance intelligente aux tickets Odoo Helpdesk : triage, qualification et réponse automatique avec niveau de confiance",
+  "author": {
+    "name": "Nicolas Jeudy"
+  },
+  "keywords": ["odoo", "helpdesk", "tickets", "support", "triage", "automation"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "alusage-dev",
+  "version": "0.1.0",
+  "description": "Workflow de développement Alusage : BMAD method, branches dev-YYYYMMDD, GitHub PRs, MCP server pour instances Docker/Cloudron.",
+  "author": {
+    "name": "Nicolas Jeudy"
+  }
+}

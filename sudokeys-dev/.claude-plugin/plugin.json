@@ -1,0 +1,9 @@
+{
+  "name": "sudokeys-dev",
+  "version": "0.1.0",
+  "description": "Workflow de développement Odoo Sudokeys : BMAD, branches TI, brainkeys, MR GitLab — déclenché depuis les tickets helpdesk",
+  "author": {
+    "name": "Nicolas Jeudy"
+  },
+  "keywords": ["odoo", "development", "bmad", "gitlab", "brainkeys", "sudokeys"]
+}
